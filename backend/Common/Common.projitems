@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>9e9d21c8-bda0-4de9-9d34-476246d61a11</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Common</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Base\Extensions\EntityExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\Extensions\EntityReferenceExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\Extensions\ContextExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\Helpers\PluginBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\Helpers\Tracer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BusinessRules\Example\ExampleBusinessRule.cs" />
+  </ItemGroup>
+</Project>
